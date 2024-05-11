@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="montserrat-400">
     <h1 class="montserrat-700 head">AB Testing Project Submission</h1>
 
     <p class="montserrat-400">
@@ -29,15 +29,112 @@
       In this project, I changed the 'schedule appointment' buttons to light
       blue to make them easier to see and make the interaction more clear. I
       also changed the title of the table to "Schedule an Appotinment Below" so
-      users are more clear on what they have to do.
+      users are more clear on what they have to do. I've attached a photo below.
     </p>
+    <img class="photo" src="bchance.png" alt="Changes" />
+    <h3>My Metric</h3>
+    <p>
+      The metric that I chose is the mouse movement distance, which is measured
+      in pixels. I selected this metric because a well-designed website should
+      have less mouse movement to get to the desired behavior. I wanted to test
+      this idea and see if it’s true.
+    </p>
+    <div>
+      <h3>My Hypothesis</h3>
+
+      <h4>Misclick Rate</h4>
+
+      Null Hypothesis: The misclick rate in version A will be the same as the
+      misclick rate in version B Alternative Hypothesis: The misclick rate in
+      version B will be different than the misclick rate in Version A My
+      hypothesis: Since the color of ‘schedule appointment’ is now highlighted,
+      I think it will be easier for users to find the correct button to press to
+      schedule the appointment. Therefore, the misclick rate will differ. That’s
+      why I chose this as the alternative hypothesis. I hypothesize that that
+      null hypothesis will be rejected.
+
+      <h4>Time on Page</h4>
+
+      Null Hypothesis: The time on page (in milliseconds) in version A will be
+      the same as the misclick rate in Version B Alternative Hypothesis: The
+      time on page (in milliseconds) in version B will be less than the time on
+      page in Version A My hypothesis: Since the title has changed to be more
+      clear, a user will understand that the primary screen they’re on is to
+      schedule an appointment. Therefore, it should be quicker to schedule an
+      appointment. Therefore, the alternative hypothesis states that version B
+      will have a lower time on page metric. I hypothesize that the null
+      hypothesis will be rejected and the alternative will be accepted.
+
+      <h4>Mouse Move Distance</h4>
+
+      Null Hypothesis: The mouse movement distance (measured in pixels) in
+      version A will be the same as the mouse movement distance in version B
+      Alternative Hypothesis: The mouse movement distance (measured in pixels)
+      in version B will be different than as the mouse movement distance in
+      version A My hypothesis: Mouse movement distance may decrease due to good
+      design. Therefore, the alternate hypothesis states that the mouse movement
+      in Version B will be less than in Version A. However, a user may move
+      their mouse around the screen when they are reading the text. Therefore,
+      this may be the same across both designs. I hypothesize that we fail to
+      reject the null hypothesis.
+    </div>
+    <div>
+      <h3>Solutions</h3>
+      <h4>Misclick Rate</h4>
+      <p>
+        For misclick rate we used the chi^2 test since this was a categorical
+        assessment. The chi^2 value was 6.428571429. This is a high chi^2 value
+        and indicates that there is a significant deviation in misclicks than if
+        we were to expect the misclicks to be the same in both versions. On the
+        other hand, the p-value is 0.01, suggesting that there is a
+        statistically significant difference between the two frequencies.
+        Therefore, from this information, we can reject the null hypothesis and
+        accept the alternative hypothesis that the two misclick rates are
+        different.
+      </p>
+      <h4>Time on Page</h4>
+      <p>
+        For time on page we used the one tailed t-test. We used this t-test
+        because the alternative hypothesis was to prove that time on page in B
+        was less than in A. In this case, the mean of A is 38,216.95 while the
+        mean of B is 9,046.29. Th​​e p-value is .999999998 for A < B. Since the
+        p-value is so close to the hypothesis of A < B, then we can confidently
+        reject this. Therefore, we can confidently state that B < A. Thus, we
+        can reject the null hypothesis that these are the same, and accept the
+        alternative hypothesis which states that B will be less than version A.
+      </p>
+      <h4>Mouse Move Distance</h4>
+      <p>
+        For mouse movement, I used the two-tailed t-test. We used this t-test
+        because the alternative hypothesis was to prove that there is a
+        difference between the time on page, rather than a certain direction.
+        There is a difference between version A & version B which is
+        statistically significant with a p-value of 0.0001. A high t-score
+        indicates that there is a significant difference between the means, and
+        a negative t-score (depending on the calculation), means that the mean
+        of A is higher than the mean of B. Comparing the means, A has a mean of
+        8975.16572 while B has a mean of 2796.220981. A has a significantly
+        higher mean and is statistically significant. Therefore, we can
+        confidently reject the null hypothesis and accept the alternative
+        hypothesis that these values are different.
+      </p>
+    </div>
+    <div>
+      <h3>Conclusion</h3>
+      <p>
+        In conclusion, the changes that I made to the website were successful in
+        improving the user experience. The misclick rate was significantly
+        different between the two versions, with the new version having a lower
+        misclick rate. The time on page was also significantly different between
+        the two versions, with the new version having a lower time on page. The
+        mouse movement distance was also significantly different between the two
+        versions, with the new version having a lower mouse movement distance.
+        Overall, I made effective changes and learned about the powerful nature
+        of statistical tests to measure the impact of design changes on user
+      </p>
+    </div>
 
     <script src="script.js"></script>
-
-    <div>Place the photo here</div>
-
-    <h2>Hypothesis</h2>
-    <div></div>
   </body>
 </html>
 <footer></footer>
